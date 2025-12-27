@@ -93,61 +93,61 @@ const Products = () => {
       </section>
 
       {/* Quality Assurance */}
-      <section className="quality-section">
-        <div className="container">
-          <div className="quality-grid">
-            <div className="quality-content">
-              <h2>Uncompromising Quality  </h2>
-              <p className="quality-paragraph">
-    We maintain the highest standards in pharmaceutical manufacturing with rigorous quality control at every stage. This commitment ensures every product meets global benchmarks for safety, efficacy, and reliability—from raw material sourcing to final packaging.
-  </p>
-  <p className="quality-paragraph">
-    Our dedicated quality assurance team conducts multi-level checks, including comprehensive stability testing, bioequivalence studies, and contamination control. Every batch undergoes thorough validation to guarantee consistent therapeutic performance and utmost patient safety.
-  </p>
-              <div className="certifications">
-                <div className="cert-item">
-                  <FontAwesomeIcon icon={faCertificate} />
-                  <div>
-                    <h4>WHO-GMP Certified</h4>
-                    <p>Global manufacturing standards</p>
-                  </div>
-                </div>
-                <div className="cert-item">
-                  <FontAwesomeIcon icon={faFlask} />
-                  <div>
-                    <h4>Stability Tested</h4>
-                    <p>Comprehensive stability studies</p>
-                  </div>
-                </div>
-                <div className="cert-item">
-                  <FontAwesomeIcon icon={faCheckCircle} />
-                  <div>
-                    <h4>Bioequivalence Proven</h4>
-                    <p>Clinically validated formulations</p>
-                  </div>
-                </div>
-              </div>
+<section className="quality-section">
+  <div className="container">
+    <div className="quality-grid">
+      <div className="quality-content">
+        <h2>Uncompromising Quality</h2>
+        <p className="quality-paragraph">
+          We maintain the highest standards in pharmaceutical manufacturing with rigorous quality control at every stage. This commitment ensures every product meets global benchmarks for safety, efficacy, and reliability—from raw material sourcing to final packaging.
+        </p>
+        <p className="quality-paragraph">
+          Our dedicated quality assurance team conducts multi-level checks, including comprehensive stability testing, bioequivalence studies, and contamination control. Every batch undergoes thorough validation to guarantee consistent therapeutic performance and utmost patient safety.
+        </p>
+        <div className="certifications">
+          <div className="cert-item">
+            <FontAwesomeIcon icon={faCertificate} />
+            <div>
+              <h4>WHO-GMP Certified</h4>
+              <p>Global manufacturing standards</p>
             </div>
-            <div className="quality-visual">
-              <img src="https://eu-images.contentstack.com/v3/assets/blt14ac89070d5e4751/blt6b1b68da3e624243/6725205cdd4fd46cf015a3a6/IMG_2024-11-01-143828.jpg" alt="GMP Cleanroom Facility" className="quality-facility-img" />
-              <img src="https://media.licdn.com/dms/image/v2/D5612AQH96ea4lkAeBg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1682570182708?e=2147483647&v=beta&t=VJ4J8g_hBqvRjnEWJao0b5BD8655mCxDhIL0MtSz2UA" alt="Modern GMP Cleanroom" className="quality-facility-img" />
-              <img src="https://www.gxpcellators.com/wp-content/uploads/2025/02/cell-and-gane-teherapy_04022025-png.webp" alt="Advanced Pharmaceutical Facility" className="quality-facility-img" />
+          </div>
+          <div className="cert-item">
+            <FontAwesomeIcon icon={faFlask} />
+            <div>
+              <h4>Stability Tested</h4>
+              <p>Comprehensive stability studies</p>
+            </div>
+          </div>
+          <div className="cert-item">
+            <FontAwesomeIcon icon={faCheckCircle} />
+            <div>
+              <h4>Bioequivalence Proven</h4>
+              <p>Clinically validated formulations</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <div className="quality-visual">
+        <img src="https://eu-images.contentstack.com/v3/assets/blt14ac89070d5e4751/blt6b1b68da3e624243/6725205cdd4fd46cf015a3a6/IMG_2024-11-01-143828.jpg" alt="GMP Cleanroom Facility" className="quality-facility-img" />
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQH96ea4lkAeBg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1682570182708?e=2147483647&v=beta&t=VJ4J8g_hBqvRjnEWJao0b5BD8655mCxDhIL0MtSz2UA" alt="Modern GMP Cleanroom" className="quality-facility-img" />
+        <img src="https://www.gxpcellators.com/wp-content/uploads/2025/02/cell-and-gane-teherapy_04022025-png.webp" alt="Advanced Pharmaceutical Facility" className="quality-facility-img" />
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* CTA */}
-      <section className="products-cta">
-        <div className="container">
-          <h2>Partner with Excellence</h2>
-          <p>Join thousands of healthcare professionals trusting Vama Lifecare for superior pharmaceutical solutions</p>
-          <div className="cta-buttons">
-            <a href="/contact" className="primary-cta">Contact Our Team</a>
-            <a href="/contact" className="secondary-cta">Request Product List</a>
-          </div>
-        </div>
-      </section>
+{/* CTA */}
+<section className="products-cta">
+  <div className="container">
+    <h2>Partner with Excellence</h2>
+    <p>Join thousands of healthcare professionals trusting Vama Lifecare for superior pharmaceutical solutions</p>
+    <div className="cta-buttons">
+      <a href="/contact" className="primary-cta">Contact Our Team</a>
+      <a href="/contact" className="secondary-cta">Request Product List</a>
+    </div>
+  </div>
+</section>
     </div>
   );
 };
