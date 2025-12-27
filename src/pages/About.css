@@ -109,7 +109,7 @@
 .stats-section {
   padding: 5px 0;
   background:white;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .stats-grid {
@@ -131,7 +131,7 @@
 
 /* Vision Mission */
 .vm-section {
-  padding: 20px 0;
+  padding: 0px 0;
   background: #f9f9f9;
 }
 
