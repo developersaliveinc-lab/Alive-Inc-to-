@@ -485,7 +485,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 100px;
-  animation: marquee-scroll 35s linear infinite;
+  animation: marquee-scroll 12s linear infinite;
 }
 
 .accreditation-logo {

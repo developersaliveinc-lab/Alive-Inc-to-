@@ -1,17 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import { 
-  faFacebookF, 
-  faInstagram, 
-  faLinkedinIn 
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="footer-container">
+        {/* Company Info */}
         <div className="footer-column company-info">
           <h3>Vama Lifecare</h3>
           <p>
@@ -19,6 +16,7 @@ const Footer = () => {
           </p>
         </div>
 
+        {/* Sitemap */}
         <div className="footer-column sitemap">
           <h3>Sitemap</h3>
           <ul>
@@ -29,6 +27,7 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Contacts */}
         <div className="footer-column contacts">
           <h3>Contacts</h3>
           <div className="contact-item">
@@ -39,7 +38,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
             <span>info@vamalifecare.com</span>
           </div>
-          <div className="contact-item address">
+          <div className="contact-item">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="contact-icon" />
             <span>
               F-85, 1st Floor, Nano-Wing, Fantasia Business Park,<br />
@@ -48,6 +47,7 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Social */}
         <div className="footer-column social">
           <h3>Follow Us</h3>
           <div className="social-icons">
@@ -64,6 +64,7 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>&copy; Copyright Vama Lifecare. All Rights Reserved</p>
         <p>Designed by <span>Alive Inc Group.</span></p>
