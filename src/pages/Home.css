@@ -26,13 +26,13 @@ body {
 }
 
 .slide::before {
-  content: "#e91e63";
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background:#e91e63; /* Adjusted overlay opacity */
+  background: #e91e63; /* Adjusted overlay opacity */
   z-index: 1;
 }
 
