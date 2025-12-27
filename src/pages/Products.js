@@ -39,7 +39,7 @@ const Products = () => {
       <section className="products-hero" style={{ backgroundImage: "url('https://www.shutterstock.com/image-photo/blurred-background-modern-pharmaceutical-laboratory-260nw-2621808743.jpg')" }}>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1>Our Pharmaceutical Excellence</h1>
+          <h1>Our Pharmacies  Excellence</h1>
           <p>500+ WHO-GMP Certified Products Across 6 Therapeutic Segments</p>
           <div className="hero-highlight">
             <FontAwesomeIcon icon={faShieldAlt} />
