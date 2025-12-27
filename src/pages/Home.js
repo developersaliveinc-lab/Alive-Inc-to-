@@ -357,6 +357,10 @@ const Home = () => {
             <img src="/images/trusted/pharma.jpg" alt="Generic Drugs" className="tp-product-img" />
             <p className="tp-category">Generic Drugs</p>
           </div>
+           <div className="tp-item">
+            <img src="/images/trusted/atropine.jpg" alt="Generic Drugs" className="tp-product-img" />
+            <p className="tp-category">Microscope</p>
+          </div>
           {/* Add more as needed */}
         </div>
       </section>

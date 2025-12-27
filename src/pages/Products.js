@@ -97,8 +97,13 @@ const Products = () => {
         <div className="container">
           <div className="quality-grid">
             <div className="quality-content">
-              <h2>Uncompromising Quality</h2>
-              <p>We maintain the highest standards in pharmaceutical manufacturing with rigorous quality control at every stage.</p>
+              <h2>Uncompromising Quality  </h2>
+              <p className="quality-paragraph">
+    We maintain the highest standards in pharmaceutical manufacturing with rigorous quality control at every stage. This commitment ensures every product meets global benchmarks for safety, efficacy, and reliability—from raw material sourcing to final packaging.
+  </p>
+  <p className="quality-paragraph">
+    Our dedicated quality assurance team conducts multi-level checks, including comprehensive stability testing, bioequivalence studies, and contamination control. Every batch undergoes thorough validation to guarantee consistent therapeutic performance and utmost patient safety.
+  </p>
               <div className="certifications">
                 <div className="cert-item">
                   <FontAwesomeIcon icon={faCertificate} />
@@ -127,7 +132,6 @@ const Products = () => {
               <img src="https://eu-images.contentstack.com/v3/assets/blt14ac89070d5e4751/blt6b1b68da3e624243/6725205cdd4fd46cf015a3a6/IMG_2024-11-01-143828.jpg" alt="GMP Cleanroom Facility" className="quality-facility-img" />
               <img src="https://media.licdn.com/dms/image/v2/D5612AQH96ea4lkAeBg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1682570182708?e=2147483647&v=beta&t=VJ4J8g_hBqvRjnEWJao0b5BD8655mCxDhIL0MtSz2UA" alt="Modern GMP Cleanroom" className="quality-facility-img" />
               <img src="https://www.gxpcellators.com/wp-content/uploads/2025/02/cell-and-gane-teherapy_04022025-png.webp" alt="Advanced Pharmaceutical Facility" className="quality-facility-img" />
-              
             </div>
           </div>
         </div>
