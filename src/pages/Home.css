@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Poppins', sans-serif !important;
+  overflow-x: hidden;
 }
 
 /* Slider */
@@ -31,7 +32,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background:#e91e63 ;
+  background: rgba(233, 30, 99, 0.6);
   z-index: 1;
 }
 
@@ -58,7 +59,7 @@ body {
 
 /* Ethos Section */
 .ethos-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -151,7 +152,7 @@ body {
 /* Welcome Section */
 .welcome-section {
   position: relative;
-  padding: 15px 0px;
+  padding: 80px 20px;
   background-color: #ffffff;
 }
 
@@ -226,7 +227,6 @@ body {
 }
 
 .top-tagline-big {
-  font-family: 'Poppins', sans-serif !important;
   color: #e91e63;
   font-size: 36px;
   font-weight: 800;
@@ -237,7 +237,6 @@ body {
 }
 
 .welcome-text p {
-  font-family: 'Poppins', sans-serif !important;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.8;
@@ -248,7 +247,7 @@ body {
 /* Stats Section */
 .stats-section {
   position: relative;
-  padding: 60px 20px;
+  padding: 80px 20px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -292,42 +291,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s ease;
-}
-
-.stat-item:hover .stat-number {
-  color: #d42c6c;
 }
 
 .plus {
   color: #e91e63;
   font-size: 25px;
   margin-left: 10px;
-  transition: all 0.4s ease;
-  display: inline-block;
-}
-
-.stat-item:hover .plus {
-  color: #c2185b;
-  font-size: 70px;
-  transform: translateY(-10px);
-  text-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
 }
 
 .stat-label {
   font-size: 22px;
   color: #666;
   font-weight: 500;
-  transition: color 0.4s ease;
 }
 
-.stat-item:hover .stat-label {
-  color: black;
-}
-
-/* Product Range Section - Mobile Fixed */
+/* Product Range Section */
 .product-range-section {
-  padding: 15px 0px;
+  padding: 80px 20px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -409,7 +389,7 @@ body {
   font-weight: 500;
 }
 
-/* Slick Dots & Arrows */
+/* Slick Carousel Controls */
 .product-carousel .slick-dots {
   bottom: -50px;
 }
@@ -445,55 +425,59 @@ body {
   font-size: 24px;
 }
 
-/* Two Decades Marquee Section */
+/* Marquee Sections */
 .marquee-excellence-section {
-  padding: 15px 0px;
+  padding: 60px 0;
   background-color: #f8f8f8;
   text-align: center;
   overflow: hidden;
 }
 
 .marquee-container {
-  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .marquee-content {
   display: inline-flex;
   align-items: center;
   gap: 60px;
-  white-space: nowrap;
+  animation: marquee-scroll 45s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .marquee-content h2 {
-  font-size: 48px;
+  font-size: 3rem;
   color: #c2185b;
-  font-weight: 700;
-  margin: 0;
+  font-weight: 800;
 }
 
 .marquee-content p {
-  font-size: 28px;
-  color: black;
-  margin: 0;
+  font-size: 2rem;
+  color: #333;
 }
 
 .separator {
   color: #e91e63;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
-/* Accreditations Marquee Section */
+/* Accreditations Marquee */
 .marquee-accreditations-section {
-  padding: 15px 0px;
+  padding: 80px 0;
   background-color: #ffffff;
   text-align: center;
   overflow: hidden;
 }
 
 .accreditations-title {
-  font-size: 48px;
+  font-size: 3.5rem;
   color: #e91e63;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 50px;
 }
 
@@ -501,19 +485,18 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 100px;
-  white-space: nowrap;
+  animation: marquee-scroll 35s linear infinite;
 }
 
 .accreditation-logo {
-  height: 150px;
-  width: 200px;
+  height: 120px;
   object-fit: contain;
 }
 
-/* Advanced Formulations Section - Mobile Fixed */
+/* Advanced Formulations Section */
 .advanced-formulations-section {
   position: relative;
-  padding: 15px 0px;
+  padding: 80px 20px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -630,7 +613,7 @@ body {
 /* Trusted Pharmaceutical Products Section */
 .trusted-products-section {
   position: relative;
-  padding: 15px 0px;
+  padding: 80px 20px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -656,20 +639,6 @@ body {
   color: #333;
   font-weight: 700;
   margin: 0;
-  position: relative;
-  display: inline-block;
-}
-
-.tp-main-header h2::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 4px;
-  background-color: #e91e63;
-  border-radius: 2px;
 }
 
 .tp-sub-header {
@@ -726,46 +695,36 @@ body {
   margin: 0;
 }
 
-/* Pink Banner Marquee Section */
+/* Pink Banner Marquee */
 .pink-banner-marquee-section {
-  padding: 0px 0px;
+  padding: 60px 0;
   background: #c51162;
   overflow: hidden;
-  position: relative;
 }
 
-.pink-banner-container {
-  width: 100%;
+.pink-marquee {
   background: #c51162;
-  opacity: 0.9;
-  padding: 20px 0;
-  border-radius: 12px;
 }
 
 .pink-banner-content {
   display: inline-flex;
   align-items: center;
   gap: 80px;
-  white-space: nowrap;
-  font-size: 32px;
+  animation: marquee-scroll 40s linear infinite;
+  font-size: 2.2rem;
   color: white;
   font-weight: 600;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
-
-.pink-banner-content p {
-  margin: 0;
 }
 
 .pink-separator {
   color: white;
-  font-size: 40px;
+  font-size: 3rem;
 }
 
 /* Testimonials Section */
 .testimonials-section {
   position: relative;
-  padding: 15px 0px;
+  padding: 80px 20px;
   background: linear-gradient(to bottom, #fdf2f8 0%, #ffffff 100%);
   text-align: center;
 }
@@ -869,491 +828,93 @@ body {
   letter-spacing: 5px;
 }
 
-/* Mobile Responsive - All Sections Perfect */
+/* Mobile Responsive - Full Page Perfect */
 @media (max-width: 1200px) {
-  .product-carousel {
-    padding: 0 40px;
-  }
-  
-  .af-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
-  }
-  
-  .af-img {
-    height: 350px;
-  }
-  
-  .af-middle-box {
-    grid-column: 1 / -1;
-    height: auto;
-    padding: 50px 30px;
-  }
+  .hero-content h1 { font-size: 4.5rem; }
+  .af-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .af-img { height: 350px; }
+  .af-middle-box { grid-column: 1 / -1; height: auto; padding: 50px; }
 }
 
 @media (max-width: 992px) {
-  .product-carousel {
-    padding: 0 30px;
-  }
-  
-  .product-img {
-    max-width: 260px;
-    height: 260px;
-  }
-  
-  .product-info h3 {
-    font-size: 22px;
-  }
-  
-  .product-info p {
-    font-size: 17px;
-  }
-  
-  .test-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .tp-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .af-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  
-  .af-img {
-    height: 300px;
-  }
-  
-  .af-middle-box {
-    padding: 40px 25px;
-  }
+  .slide { height: 70vh; min-height: 500px; }
+  .hero-content h1 { font-size: 4rem; }
+  .hero-content p { font-size: 1.5rem; }
+  .section-title { font-size: 3.2rem; }
+  .ethos-cards { gap: 60px; }
+  .ethos-card p { font-size: 20px; }
+  .tp-grid { grid-template-columns: 1fr 1fr; }
+  .test-grid { grid-template-columns: 1fr; }
+  .af-grid { grid-template-columns: 1fr 1fr; }
+  .af-img { height: 300px; }
 }
 
 @media (max-width: 768px) {
-  .slide {
-    height: 60vh;
-    min-height: 400px;
-  }
-  
-  .slide-content h1 {
-    font-size: 50px;
-  }
-  
-  .slide-content p {
-    font-size: 18px;
-  }
-  
-  .product-carousel {
-    padding: 0 20px;
-  }
-  
-  .product-img {
-    max-width: 240px;
-    height: 240px;
-    padding: 15px;
-  }
-  
-  .product-info h3 {
-    font-size: 20px;
-  }
-  
-  .product-info p {
-    font-size: 16px;
-  }
-  
-  .tp-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .pink-banner-content {
-    font-size: 24px;
-    gap: 50px;
-  }
-  
-  .pink-separator {
-    font-size: 30px;
-  }
-  
-  .test-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px;
-  }
-  
-  .test-img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .advanced-formulations-section {
-    padding: 80px 20px;
-  }
-  
-  .af-header h2 {
-
-    font-size: 42px;
-  }
-  
-  .af-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  
-  .af-img {
-    height: 280px;
-  }
-  
-  .af-middle-box {
-    padding: 40px 20px;
-    height: auto;
-  }
-  
-  .af-footer {
-    flex-direction: column;
-    gap: 15px;
-    font-size: 24px;
-  }
-  
-  .af-footer-icon {
-    width: 50px;
-    height: 50px;
-  }
+  .slide { height: 60vh; min-height: 400px; }
+  .hero-content h1 { font-size: 3.5rem; }
+  .hero-content p { font-size: 1.4rem; }
+  .section-title { font-size: 2.8rem; margin: 50px 0 40px; }
+  .ethos-cards { gap: 40px; }
+  .ethos-card p { font-size: 18px; }
+  .welcome-container { flex-direction: column; }
+  .years-badge { position: static; transform: none; margin: 30px auto; width: 120px; height: 120px; }
+  .years-number { font-size: 48px; }
+  .top-tagline-big { font-size: 26px; }
+  .stats-container { gap: 40px; }
+  .stat-number { font-size: 38px; }
+  .stat-label { font-size: 18px; }
+  .product-carousel { padding: 0 20px; }
+  .product-img { max-width: 240px; height: 240px; }
+  .product-info h3 { font-size: 20px; }
+  .product-info p { font-size: 16px; }
+  .marquee-content h2 { font-size: 2.5rem; }
+  .marquee-content p { font-size: 1.8rem; }
+  .separator { font-size: 2rem; }
+  .accreditations-title { font-size: 2.8rem; }
+  .accreditation-logo { height: 100px; }
+  .af-grid { grid-template-columns: 1fr; }
+  .af-img { height: 280px; }
+  .af-middle-box { padding: 40px 20px; }
+  .af-footer { flex-direction: column; gap: 15px; font-size: 24px; }
+  .tp-grid { grid-template-columns: 1fr; }
+  .tp-product-img { max-width: 300px; }
+  .tp-category { font-size: 22px; }
+  .pink-banner-content { font-size: 1.8rem; gap: 50px; }
+  .pink-separator { font-size: 2.5rem; }
+  .test-card { flex-direction: column; text-align: center; padding: 30px; }
+  .test-img { width: 100px; height: 100px; }
+  .test-quote { font-size: 1.1rem; }
+  .test-name { font-size: 1.4rem; }
+  .test-stars { font-size: 1.4rem; }
+  .pink-dot, .stats-pink-dot, .tp-pink-dot, .test-pink-dot, .af-pink-dot { display: none; }
 }
 
-@media (max-width: 576px) {
-  .slide-content h1 {
-    font-size: 40px;
-  }
-  
-  .slide-content p {
-    font-size: 16px;
-  }
-  
-  .product-carousel {
-    padding: 0 15px;
-  }
-  
-  .product-img {
-    max-width: 220px;
-    height: 100px;
-    padding: 15px;
-  }
-  
-  .product-info h3 {
-    font-size: 19px;
-  }
-  
-  .product-info p {
-    font-size: 15px;
-  }
-  
-  .pink-banner-content {
-    font-size: 20px;
-    gap: 40px;
-  }
-  
-  .pink-separator {
-    font-size: 26px;
-  }
-  
-  .test-img {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .af-header h2 {
-    font-size: 36px;
-  }
-  
-  .af-quality-text {
-    font-size: 16px;
-  }
-  
-  .af-img {
-    height: 250px;
-  }
-  
-  .af-middle-box h3 {
-    font-size: 24px;
-  }
-  
-  .af-middle-box p {
-    font-size: 18px;
-  }
-  
-  .af-footer {
-    font-size: 20px;
-  }
-}
-
-/* ========================= */
-/* GLOBAL MOBILE FIXES */
-/* ========================= */
-html, body {
-  overflow-x: hidden;
-}
-
-/* Remove decorative dots on mobile */
-@media (max-width: 768px) {
-  .pink-dot,
-  .stats-pink-dot,
-  .tp-pink-dot,
-  .test-pink-dot,
-  .af-pink-dot {
-    display: none;
-  }
-}
-
-/* ========================= */
-/* SLIDER MOBILE FIX */
-/* ========================= */
-@media (max-width: 768px) {
-  .slide {
-    height: 55vh;
-    min-height: 350px;
-  }
-
-  .slide-content h1 {
-    font-size: 42px;
-    line-height: 1.2;
-  }
-
-  .slide-content p {
-    font-size: 16px;
-  }
-}
-
-/* ========================= */
-/* ETHOS SECTION */
-/* ========================= */
-@media (max-width: 768px) {
-  .ethos-cards {
-    gap: 40px;
-  }
-
-  .ethos-card p {
-    font-size: 18px;
-  }
-
-  .ethos-footer {
-    font-size: 20px;
-  }
-}
-
-/* ========================= */
-/* WELCOME SECTION */
-/* ========================= */
-@media (max-width: 768px) {
-  .welcome-container {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .years-badge {
-    position: static;
-    transform: none;
-    margin: 30px auto 0;
-    width: 120px;
-    height: 120px;
-  }
-
-  .years-number {
-    font-size: 48px;
-  }
-
-  .top-tagline-big {
-    font-size: 26px;
-    letter-spacing: 2px;
-  }
-}
-
-/* ========================= */
-/* STATS SECTION */
-/* ========================= */
-@media (max-width: 768px) {
-  .stats-container {
-    gap: 40px;
-  }
-
-  .stat-number {
-    font-size: 38px;
-  }
-
-  .stat-label {
-    font-size: 18px;
-  }
-
-  .stat-item:hover .plus {
-    font-size: 40px;
-    transform: none;
-  }
-}
-
-/* ========================= */
-/* PRODUCT RANGE */
-/* ========================= */
-@media (max-width: 576px) {
-  .product-header h2 {
-    font-size: 34px;
-  }
-
-  .product-img {
-    max-width: 100%;
-    height: 200px;
-  }
-}
-
-/* ========================= */
-/* MARQUEE SECTIONS */
-/* ========================= */
-@media (max-width: 768px) {
-  .marquee-content h2 {
-    font-size: 28px;
-  }
-
-  .marquee-content p {
-    font-size: 18px;
-  }
-
-  .separator {
-    font-size: 24px;
-  }
-}
-
-/* ========================= */
-/* ADVANCED FORMULATIONS */
-/* ========================= */
-@media (max-width: 768px) {
-  .af-header h2 {
-    font-size: 34px;
-  }
-
-  .af-middle-box {
-    padding: 30px 20px;
-  }
-
-  .af-middle-box h3 {
-    font-size: 22px;
-  }
-
-  .af-middle-box p {
-    font-size: 16px;
-  }
-}
-
-/* ========================= */
-/* TRUSTED PRODUCTS */
-/* ========================= */
-@media (max-width: 768px) {
-  .tp-main-header h2 {
-    font-size: 32px;
-  }
-
-  .tp-sub-header h3 {
-    font-size: 34px;
-  }
-
-  .tp-category {
-    font-size: 22px;
-  }
-}
-
-/* ========================= */
-/* TESTIMONIALS */
-/* ========================= */
-@media (max-width: 576px) {
-  .test-header h2 {
-    font-size: 34px;
-  }
-
-  .test-quote {
-    font-size: 16px;
-  }
-
-  .test-name {
-    font-size: 20px;
-  }
-}
-/* Modern CSS Marquee - Replace all <marquee> */
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 30px 0;
-  background: #f8f8f8;
-}
-
-.marquee-content {
-  display: inline-flex;
-  align-items: center;
-  gap: 60px;
-  animation: marquee-scroll 45s linear infinite;
-}
-
-@keyframes marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.marquee-content h2 {
-  font-size: 3rem;
-  color: #c2185b;
-  font-weight: 800;
-}
-
-.marquee-content p {
-  font-size: 2rem;
-  color: #333;
-}
-
-.separator {
-  color: #e91e63;
-  font-size: 2.5rem;
-}
-
-/* Accreditations Marquee */
-.marquee-accreditations-section .marquee-container {
-  background: white;
-  padding: 60px 0;
-}
-
-.accreditations-logos {
-  display: inline-flex;
-  align-items: center;
-  gap: 100px;
-  animation: marquee-scroll 35s linear infinite;
-}
-
-.accreditation-logo {
-  height: 120px;
-  object-fit: contain;
-}
-
-/* Pink Banner Marquee */
-.pink-marquee {
-  background: #c51162;
-  padding: 40px 0;
-}
-
-.pink-banner-content {
-  display: inline-flex;
-  align-items: center;
-  gap: 80px;
-  animation: marquee-scroll 40s linear infinite;
-  font-size: 2.2rem;
-  color: white;
-  font-weight: 600;
-}
-
-.pink-separator {
-  color: white;
-  font-size: 3rem;
-}
-
-/* Pause on hover */
-.marquee-container:hover .marquee-content,
-.marquee-container:hover .accreditations-logos,
-.marquee-container:hover .pink-banner-content {
-  animation-play-state: paused;
+@media (max-width: 480px) {
+  .slide { height: 55vh; min-height: 350px; }
+  .hero-content h1 { font-size: 2.8rem; }
+  .hero-content p { font-size: 1.2rem; }
+  .section-title { font-size: 2.4rem; }
+  .ethos-card p { font-size: 16px; }
+  .top-tagline-big { font-size: 22px; }
+  .welcome-text p { font-size: 14px; }
+  .stat-number { font-size: 32px; }
+  .stat-label { font-size: 16px; }
+  .product-img { max-width: 220px; height: 200px; }
+  .product-info h3 { font-size: 18px; }
+  .product-info p { font-size: 14px; }
+  .marquee-content h2 { font-size: 2rem; }
+  .marquee-content p { font-size: 1.4rem; }
+  .separator { font-size: 1.8rem; }
+  .accreditations-title { font-size: 2.4rem; }
+  .accreditation-logo { height: 80px; }
+  .af-img { height: 220px; }
+  .af-middle-box h3 { font-size: 22px; }
+  .af-middle-box p { font-size: 16px; }
+  .af-footer { font-size: 20px; }
+  .tp-product-img { max-width: 250px; }
+  .tp-category { font-size: 20px; }
+  .pink-banner-content { font-size: 1.5rem; gap: 40px; }
+  .pink-separator { font-size: 2rem; }
+  .test-quote { font-size: 1rem; }
+  .test-name { font-size: 1.2rem; }
 }
