@@ -86,7 +86,7 @@
 /* Social Icons - Same Pink Color (as per screenshot) */
 .social-icons {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   justify-content: flex-start;
   margin-top: 20px;
 }
