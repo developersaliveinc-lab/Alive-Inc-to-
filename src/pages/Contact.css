@@ -127,7 +127,7 @@
 }
 
 .form-header h2 {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   color: #333;
   margin-bottom: 20px;
   font-weight: 800;
@@ -350,7 +350,8 @@
   
   .submit-btn {
     font-size: 1.3rem;
-    padding: 20px 50px;
+    padding: 20px 30px;
+
   }
   
   .social-icons {
