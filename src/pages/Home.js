@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
 
 const Home = () => {
-  // Hero Slider Settings
   const heroSettings = {
     dots: true,
     infinite: true,
@@ -20,7 +19,6 @@ const Home = () => {
     cssEase: "linear",
   };
 
-  // Product Carousel Settings
   const productSettings = {
     dots: true,
     infinite: true,
@@ -32,18 +30,9 @@ const Home = () => {
     autoplaySpeed: 3000,
     pauseOnHover: true,
     responsive: [
-      {
-        breakpoint: 1200,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 992,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 1, arrows: false },
-      },
+      { breakpoint: 1200, settings: { slidesToShow: 3 } },
+      { breakpoint: 992, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 1, arrows: false } },
     ],
   };
 
@@ -51,22 +40,12 @@ const Home = () => {
     <div id="home">
       {/* Hero Slider */}
       <Slider {...heroSettings}>
-        <div
-          className="slide"
-          style={{
-            backgroundImage: `url(/images/d11bfd9e-8795-48b7-a084-fa9d6733cfeb.png)`,
-          }}
-        >
+        <div className="slide" style={{ backgroundImage: `url(/images/d11bfd9e-8795-48b7-a084-fa9d6733cfeb.png)` }}>
           <div className="slide-content">
             <h1>VAMA</h1>
-            <p>
-              Global Excellence in Manufacturing and Exporting
-              <br />
-              Life-Saving Pharmaceutical Formulations
-            </p>
+            <p>Global Excellence in Manufacturing and Exporting<br />Life-Saving Pharmaceutical Formulations</p>
           </div>
         </div>
-        {/* Add more slides if needed */}
       </Slider>
 
       {/* Vama Ethos Section */}
@@ -135,7 +114,6 @@ const Home = () => {
       {/* Welcome Section */}
       <section className="welcome-section">
         <div className="pink-dot"></div>
-
         <div className="welcome-container">
           <div className="welcome-left">
             <div className="years-badge">
@@ -149,7 +127,6 @@ const Home = () => {
             <p className="top-tagline-big">
               ONE STOP-SHOP FOR PHARMACEUTICAL FINISHED DOSE FORMULATIONS
             </p>
-
             <div className="welcome-text">
               <p>
                 VAMA Lifecare has been fully equipped in Manufacturing and Exports of Pharmaceutical Finished Dose Formulations focusing in Oncology, Critical care & Life-Saving Drugs including blood derivatives, Ophthalmology & Cardiovascular drugs to more than 50+ countries worldwide. Our Products are manufactured in Eu-GMP & Country Specific Regulatory Authority Accredited Facilities.
@@ -165,7 +142,6 @@ const Home = () => {
       {/* Stats Section */}
       <section className="stats-section">
         <div className="stats-pink-dot"></div>
-
         <div className="stats-container">
           <div className="stat-item">
             <div className="stat-number">20<span className="plus">+ ↑</span></div>
@@ -237,55 +213,61 @@ const Home = () => {
               <p>Minocycline Injection (100mg)</p>
             </div>
           </div>
-
-          {/* Add more products as needed */}
         </Slider>
       </section>
 
-      {/* Two Decades Marquee Section */}
+      {/* Two Decades Excellence - CSS Marquee */}
       <section className="marquee-excellence-section">
         <div className="marquee-container">
-          <marquee behavior="scroll" direction="left" scrollamount="10">
-            <div className="marquee-content">
-              <h2>Two Decades Of Excellence In Pharma Solutions</h2>
-              <span className="separator">●</span>
-              <p>Your One-Stop Pharma Partner</p>
-              <span className="separator">●</span>
-              <p>Reliable Solutions For Global Healthcare</p>
-              <span className="separator">●</span>
-              <p>Excellence In Life-Saving Medicines</p>
-              <span className="separator">●</span>
-              <p>Delivering Quality Products Worldwide</p>
-              <span className="separator">●</span>
-              <p>Manufactured In Accredited Pharma Facilities</p>
-            </div>
-          </marquee>
+          <div className="marquee-content">
+            <h2>Two Decades Of Excellence In Pharma Solutions</h2>
+            <span className="separator">●</span>
+            <p>Your One-Stop Pharma Partner</p>
+            <span className="separator">●</span>
+            <p>Reliable Solutions For Global Healthcare</p>
+            <span className="separator">●</span>
+            <p>Excellence In Life-Saving Medicines</p>
+            <span className="separator">●</span>
+            <p>Delivering Quality Products Worldwide</p>
+            <span className="separator">●</span>
+            <p>Manufactured In Accredited Pharma Facilities</p>
+            {/* Duplicate for seamless loop */}
+            <h2>Two Decades Of Excellence In Pharma Solutions</h2>
+            <span className="separator">●</span>
+            <p>Your One-Stop Pharma Partner</p>
+            <span className="separator">●</span>
+            <p>Reliable Solutions For Global Healthcare</p>
+            <span className="separator">●</span>
+            <p>Excellence In Life-Saving Medicines</p>
+            <span className="separator">●</span>
+            <p>Delivering Quality Products Worldwide</p>
+            <span className="separator">●</span>
+            <p>Manufactured In Accredited Pharma Facilities</p>
+          </div>
         </div>
       </section>
 
-      {/* Accreditations Marquee Section */}
+      {/* Accreditations - CSS Marquee */}
       <section className="marquee-accreditations-section">
         <h2 className="accreditations-title">Accreditations</h2>
         <div className="marquee-container">
-          <marquee behavior="scroll" direction="left" scrollamount="8">
-            <div className="accreditations-logos">
-              <img src="/images/accreditations/who-gmp.png" alt="WHO-GMP" className="accreditation-logo" />
-              <img src="/images/accreditations/invima.png" alt="INVIMA" className="accreditation-logo" />
-              <img src="/images/accreditations/mhra.png" alt="MHRA" className="accreditation-logo" />
-              <img src="/images/accreditations/fda.png" alt="FDA" className="accreditation-logo" />
-              <img src="/images/accreditations/who-gmp.png" alt="WHO-GMP" className="accreditation-logo" />
-              <img src="/images/accreditations/invima.png" alt="INVIMA" className="accreditation-logo" />
-              <img src="/images/accreditations/mhra.png" alt="MHRA" className="accreditation-logo" />
-              <img src="/images/accreditations/fda.png" alt="FDA" className="accreditation-logo" />
-            </div>
-          </marquee>
+          <div className="accreditations-logos">
+            <img src="/images/accreditations/who-gmp.png" alt="WHO-GMP" className="accreditation-logo" />
+            <img src="/images/accreditations/invima.png" alt="INVIMA" className="accreditation-logo" />
+            <img src="/images/accreditations/mhra.png" alt="MHRA" className="accreditation-logo" />
+            <img src="/images/accreditations/fda.png" alt="FDA" className="accreditation-logo" />
+            {/* Duplicate for seamless loop */}
+            <img src="/images/accreditations/who-gmp.png" alt="WHO-GMP" className="accreditation-logo" />
+            <img src="/images/accreditations/invima.png" alt="INVIMA" className="accreditation-logo" />
+            <img src="/images/accreditations/mhra.png" alt="MHRA" className="accreditation-logo" />
+            <img src="/images/accreditations/fda.png" alt="FDA" className="accreditation-logo" />
+          </div>
         </div>
       </section>
 
       {/* Advanced Formulations Section */}
       <section className="advanced-formulations-section">
         <div className="af-pink-dot"></div>
-
         <div className="af-header">
           <span className="af-quality-text">QUALITY YOU TRUST</span>
           <h2>Advanced Formulations</h2>
@@ -330,7 +312,6 @@ const Home = () => {
       {/* Trusted Pharmaceutical Products Section */}
       <section className="trusted-products-section">
         <div className="tp-pink-dot"></div>
-
         <div className="tp-main-header">
           <h2>Trusted Experts In Pharmaceutical Manufacturing And Global Distribution</h2>
         </div>
@@ -357,42 +338,43 @@ const Home = () => {
             <img src="/images/trusted/pharma.jpg" alt="Generic Drugs" className="tp-product-img" />
             <p className="tp-category">Generic Drugs</p>
           </div>
-           <div className="tp-item">
-            <img src="/images/trusted/atropine.jpg" alt="Generic Drugs" className="tp-product-img" />
-            <p className="tp-category">Microscope</p>
+          <div className="tp-item">
+            <img src="/images/trusted/atropine.jpg" alt="Atropine" className="tp-product-img" />
+            <p className="tp-category">Critical Care</p>
           </div>
-          {/* Add more as needed */}
         </div>
       </section>
 
-      {/* Pink Banner Marquee Section */}
+      {/* Pink Banner - CSS Marquee */}
       <section className="pink-banner-marquee-section">
-        <div className="pink-banner-container">
-          <marquee behavior="scroll" direction="left" scrollamount="12">
-            <div className="pink-banner-content">
-              <p>Provide Safety</p>
-              <span className="pink-separator">○</span>
-              <p>Your One-Stop Pharma Partner</p>
-              <span className="pink-separator">○</span>
-              <p>Innovating Critical Care Formulations</p>
-              <span className="pink-separator">○</span>
-              <p>Excellence In Life-Saving Medicines</p>
-              <span className="pink-separator">○</span>
-              <p>Trusted Global</p>
-              {/* Duplicate for seamless loop */}
-              <span className="pink-separator">○</span>
-              <p>Provide Safety</p>
-              <span className="pink-separator">○</span>
-              <p>Your One-Stop Pharma Partner</p>
-            </div>
-          </marquee>
+        <div className="marquee-container pink-marquee">
+          <div className="pink-banner-content">
+            <p>Provide Safety</p>
+            <span className="pink-separator">○</span>
+            <p>Your One-Stop Pharma Partner</p>
+            <span className="pink-separator">○</span>
+            <p>Innovating Critical Care Formulations</p>
+            <span className="pink-separator">○</span>
+            <p>Excellence In Life-Saving Medicines</p>
+            <span className="pink-separator">○</span>
+            <p>Trusted Global</p>
+            {/* Duplicate for seamless loop */}
+            <p>Provide Safety</p>
+            <span className="pink-separator">○</span>
+            <p>Your One-Stop Pharma Partner</p>
+            <span className="pink-separator">○</span>
+            <p>Innovating Critical Care Formulations</p>
+            <span className="pink-separator">○</span>
+            <p>Excellence In Life-Saving Medicines</p>
+            <span className="pink-separator">○</span>
+            <p>Trusted Global</p>
+          </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
       <section className="testimonials-section">
         <div className="test-pink-dot"></div>
-
         <div className="test-header">
           <span className="test-subtitle">CLIENT TESTIMONIALS</span>
           <h2>What Our Clients Say</h2>
@@ -428,8 +410,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* NO FOOTER HERE – Footer is in App.js */}
     </div>
   );
 };
