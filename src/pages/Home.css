@@ -1,7 +1,5 @@
-/* Import Poppins Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* STRICT NO HORIZONTAL SCROLL */
 html, body, #root, #home {
   overflow-x: hidden !important;
   width: 100% !important;
@@ -14,7 +12,6 @@ html, body, #root, #home {
   max-width: 100%;
 }
 
-/* Global */
 body {
   font-family: 'Poppins', sans-serif !important;
   color: #222;
@@ -22,7 +19,6 @@ body {
   line-height: 1.8;
 }
 
-/* Container */
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -30,7 +26,6 @@ body {
   width: 100%;
 }
 
-/* Hero Slider - Pink Dots & Arrows */
 .slide {
   position: relative;
   height: 100vh;
@@ -48,34 +43,48 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: #e91e63;
+  background: #e91e63; /* Fixed - image visible */
   z-index: 1;
 }
 
 .slide-content {
   position: relative;
   z-index: 2;
-  max-width: 1200px;
-  padding: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .slide-content h1 {
-  font-size: clamp(60px, 8vw, 110px);
+  font-size: clamp(80px, 10vw, 140px);
   font-weight: 900;
-  margin-bottom: 30px;
-  text-shadow: 4px 4px 15px rgba(0,0,0,0.8);
-
+  margin: 0 0 40px 0;
+  padding: 0;
+  text-shadow: 6px 6px 25px rgba(0,0,0,0.9);
+  line-height: 1.1;
+  letter-spacing: 3px;
 }
 
 .slide-content p {
-    font-size: clamp(29px, 4vw, 36px);
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
-    max-width: 1000px;
-    /* margin: 27px auto; */
-   
+  font-size: clamp(26px, 5vw, 44px);
+  text-shadow: 4px 4px 15px rgba(0,0,0,0.9);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 1.5;
 }
 
-/* Slick Slider Custom - Pink Dots & Arrows */
+.slick-dots {
+  bottom: 50px;
+}
+
 .slick-dots li button:before {
   color: #e91e63 !important;
   font-size: 14px !important;
@@ -98,7 +107,6 @@ body {
   height: 50px;
 }
 
-/* Section Title */
 .section-title {
   font-size: clamp(40px, 6vw, 60px);
   text-align: center;
@@ -126,9 +134,25 @@ body {
   margin: 0 auto 80px;
 }
 
-/* Ethos Section */
-.ethos-section {
+.ethos-section,
+.welcome-section,
+.stats-section,
+.global-reach-section,
+.strengths-section,
+.manufacturing-section,
+.advanced-formulations-section,
+.trusted-products-section,
+.testimonials-section {
+  padding: 20px 0;
+}
+
+.marquee-excellence-section,
+.marquee-accreditations-section,
+.pink-banner-marquee-section {
   padding: 10px 0;
+}
+
+.ethos-section {
   background: white;
   text-align: center;
 }
@@ -194,9 +218,7 @@ body {
   margin: 0 auto;
 }
 
-/* Welcome Section */
 .welcome-section {
-  padding: 10px 0;
   background: white;
   position: relative;
 }
@@ -265,9 +287,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* Stats Section */
 .stats-section {
-  padding: 10px 0;
   background: white;
   text-align: center;
 }
@@ -306,9 +326,7 @@ body {
   margin-top: 20px;
 }
 
-/* Global Reach */
 .global-reach-section {
-  padding: 10px 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   text-align: center;
 }
@@ -336,9 +354,7 @@ body {
   color: #666;
 }
 
-/* Strengths */
 .strengths-section {
-  padding: 10px 0;
   background: white;
 }
 
@@ -382,15 +398,13 @@ body {
   line-height: 1.8;
 }
 
-/* Manufacturing Excellence */
 .manufacturing-section {
-  padding: 10px 0;
   background: #f8f9fa;
 }
 
 .manufacturing-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
 }
 
@@ -408,7 +422,7 @@ body {
 
 .manufacturing-img {
   width: 100%;
-  height: 400px;
+  height: clamp(300px, 50vw, 400px);
   object-fit: cover;
   transition: transform 0.6s ease;
 }
@@ -438,9 +452,7 @@ body {
   font-weight: 700;
 }
 
-/* Marquee Excellence - Perfect Seamless & Correct Order */
 .marquee-excellence-section {
-  padding: 10px 0;
   background: #f8f8f8;
   overflow: hidden;
 }
@@ -452,7 +464,7 @@ body {
 
 .marquee-content {
   display: flex;
-  animation: scroll-left 80s linear infinite;
+  animation: scroll-left 20s linear infinite;
   align-items: center;
 }
 
@@ -485,9 +497,7 @@ body {
   flex-shrink: 0;
 }
 
-/* Accreditations Marquee - Seamless */
 .marquee-accreditations-section {
-  padding: 10px 0;
   background: white;
   text-align: center;
 }
@@ -501,7 +511,7 @@ body {
 
 .accreditations-logos {
   display: flex;
-  animation: scroll-left 17s linear infinite;
+  animation: scroll-left 10s linear infinite;
   align-items: center;
 }
 
@@ -512,13 +522,11 @@ body {
 }
 
 .accreditation-logo {
-  height: clamp(140px, 15vw, 218px);
+  height: clamp(140px, 15vw, 280px);
   object-fit: contain;
 }
 
-/* Advanced Formulations */
 .advanced-formulations-section {
-  padding: 10px 0;
   background: white;
   position: relative;
 }
@@ -554,8 +562,6 @@ body {
 .af-image {
   overflow: hidden;
   border-radius: 30px;
- 
-
 }
 
 .af-img {
@@ -620,9 +626,7 @@ body {
   height: 80px;
 }
 
-/* Trusted Products - Clean Centered */
 .trusted-products-section {
-  padding: 10px 0;
   background: white;
   text-align: center;
   position: relative;
@@ -690,9 +694,7 @@ body {
   font-weight: 700;
 }
 
-/* Pink Banner Marquee - Perfect Aligned & Seamless */
 .pink-banner-marquee-section {
-  padding: 10px 0;
   background: #c51162;
   overflow: hidden;
 }
@@ -704,7 +706,7 @@ body {
 
 .pink-banner-content {
   display: flex;
-  animation: scroll-left 60s linear infinite;
+  animation: scroll-left 10s linear infinite;
   align-items: center;
 }
 
@@ -729,9 +731,7 @@ body {
   flex-shrink: 0;
 }
 
-/* Testimonials */
 .testimonials-section {
-  padding: 10px 0;
   background: linear-gradient(to bottom, #fdf2f8 0%, #ffffff 100%);
   text-align: center;
 }
@@ -767,7 +767,7 @@ body {
 .test-card {
   background: white;
   border-radius: 30px;
-  padding: 60px;
+  padding: 20px;
   box-shadow: 0 25px 60px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
@@ -819,18 +819,15 @@ body {
   letter-spacing: 8px;
 }
 
-/* Hide Decorative Dots on Mobile */
 .pink-dot, .stats-pink-dot, .tp-pink-dot, .test-pink-dot, .af-pink-dot {
   display: none;
 }
 
-/* Keyframes */
 @keyframes scroll-left {
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
 
-/* Mobile Responsive */
 @media (max-width: 1200px) {
   .container {
     padding: 0 30px;
@@ -891,6 +888,18 @@ body {
     min-height: 600px;
   }
 
+  .slide-content {
+    padding: 40px 20px;
+  }
+
+  .slide-content h1 {
+    font-size: clamp(60px, 10vw, 90px);
+  }
+
+  .slide-content p {
+    font-size: clamp(20px, 5vw, 32px);
+  }
+
   .ethos-cards, .stats-container, .global-stats, .strengths-grid, .manufacturing-grid, .tp-grid {
     grid-template-columns: 1fr;
     gap: 60px;
@@ -927,6 +936,14 @@ body {
     min-height: 500px;
   }
 
+  .slide-content h1 {
+    font-size: clamp(50px, 10vw, 70px);
+  }
+
+  .slide-content p {
+    font-size: clamp(18px, 5vw, 26px);
+  }
+
   .top-tagline-big {
     font-size: 32px;
     letter-spacing: 3px;
@@ -957,6 +974,18 @@ body {
 @media (max-width: 480px) {
   .container {
     padding: 0 15px;
+  }
+
+  .slide-content {
+    padding: 30px 15px;
+  }
+
+  .slide-content h1 {
+    font-size: clamp(45px, 10vw, 60px);
+  }
+
+  .slide-content p {
+    font-size: clamp(16px, 5vw, 24px);
   }
 
   .top-tagline-big {

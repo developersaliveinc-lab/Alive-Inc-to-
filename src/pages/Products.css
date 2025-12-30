@@ -100,7 +100,7 @@
 
 /* Categories */
 .categories-section {
-  padding: 80px 0;
+  padding: 15px 0;
   background: #f8f9fa;
 }
 
@@ -172,7 +172,7 @@
 
 /* Featured Products */
 .featured-section {
-  padding: 80px 0;
+  padding: 15px 0;
 }
 
 .products-grid {
@@ -291,7 +291,7 @@
 
 /* Quality Section - Perfect Mobile Responsive */
 .quality-section {
-  padding: 80px 20px;
+  padding: 10px 0px;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   text-align: center;
 }
@@ -383,7 +383,7 @@
 
 /* CTA */
 .products-cta {
-  padding: 80px 20px;
+  padding: 10px 0px;
   background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
   color: white;
   text-align: center;

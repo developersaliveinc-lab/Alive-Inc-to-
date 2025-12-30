@@ -244,7 +244,7 @@ const Home = () => {
           
           <div className="manufacturing-grid">
             <div className="manufacturing-item">
-              <img src="/images/advanced/lab1.jpg" alt="Modern Facility" className="manufacturing-img" />
+              <img src="/images/global/ishaque.jpg" alt="Modern Facility" className="manufacturing-img" />
               <div className="manufacturing-overlay">
                 <FontAwesomeIcon icon={faAward} className="overlay-icon" />
                 <h4>EU-GMP Certified</h4>
@@ -252,7 +252,7 @@ const Home = () => {
             </div>
             
             <div className="manufacturing-item">
-              <img src="/images/advanced/lab2.jpg" alt="Quality Control" className="manufacturing-img" />
+              <img src="images/global/ishaque1.jpg" alt="Quality Control" className="manufacturing-img" />
               <div className="manufacturing-overlay">
                 <FontAwesomeIcon icon={faMicroscope} className="overlay-icon" />
                 <h4>Advanced Testing Labs</h4>
@@ -260,7 +260,7 @@ const Home = () => {
             </div>
             
             <div className="manufacturing-item">
-              <img src="/images/advanced/lab3.jpg" alt="Production Line" className="manufacturing-img" />
+              <img src="images/global/ishaque2.jpeg" alt="Production Line" className="manufacturing-img" />
               <div className="manufacturing-overlay">
                 <FontAwesomeIcon icon={faVial} className="overlay-icon" />
                 <h4>Sterile Production</h4>
@@ -268,7 +268,7 @@ const Home = () => {
             </div>
             
             <div className="manufacturing-item">
-              <img src="/images/advanced/lab4.jpg" alt="Clean Room" className="manufacturing-img" />
+              <img src="images/global/ishaque3.jpeg" alt="Clean Room" className="manufacturing-img" />
               <div className="manufacturing-overlay">
                 <FontAwesomeIcon icon={faShieldAlt} className="overlay-icon" />
                 <h4>ISO Clean Rooms</h4>
@@ -277,27 +277,29 @@ const Home = () => {
           </div>
         </div>
       </section>
+{/* Two Decades Excellence Marquee - Mobile Fixed (No Repeat, No Missing Line) */}
+<section className="marquee-excellence-section">
+  <div className="marquee-container">
+    <div className="marquee-content">
+      {/* First Group - All Lines Complete */}
+      <div className="marquee-group">
+        <h2>Two Decades Of Excellence In Pharma Solutions</h2>
+        <span className="separator">●</span>
+        <p>Your One-Stop Pharma Partner</p>
+        <span className="separator">●</span>
+        <p>Reliable Solutions For Global Healthcare</p>
+        <span className="separator">●</span>
+        <p>Excellence In Life-Saving Medicines</p>
+        <span className="separator">●</span>
+        <p>Delivering Quality Products Worldwide</p>
+        <span className="separator">●</span>
+        <p>Manufactured In Accredited Pharma Facilities</p>
+      </div>
 
-      {/* Two Decades Excellence Marquee */}
-      <section className="marquee-excellence-section">
-        <div className="marquee-container">
-          <div className="marquee-content">
-            <h2>Two Decades Of Excellence In Pharma Solutions</h2>
-            <span className="separator">●</span>
-            <p>Your One-Stop Pharma Partner</p>
-            <span className="separator">●</span>
-            <p>Reliable Solutions For Global Healthcare</p>
-            <span className="separator">●</span>
-            <p>Excellence In Life-Saving Medicines</p>
-            <span className="separator">●</span>
-            <p>Delivering Quality Products Worldwide</p>
-            <span className="separator">●</span>
-            <p>Manufactured In Accredited Pharma Facilities</p>
-          <p>Manufactured In Accredited Pharma Facilities</p>
-          </div>
-        </div>
-      </section>
-
+      
+    </div>
+  </div>
+</section>
       {/* Accreditations Marquee */}
       <section className="marquee-accreditations-section">
         <div className="container">
