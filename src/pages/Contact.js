@@ -26,7 +26,7 @@ const Contact = () => {
   setError('');
 
   emailjs.sendForm(
-    'service_4imqcj3',      // ✅ Correct Service ID
+    'service_4imqcj3',      // Correct Service ID
     'template_fb554mb',     // Template ID
     e.target,
     '-eikndrZpqw0OZ0t3'     // Public Key
