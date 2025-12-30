@@ -145,7 +145,7 @@ const About = () => {
             </div>
             <div className="team-card">
               <img src={teamCOO} alt="Mr. Amit Kumar" />
-              <h4>Mr. Amit Kumar</h4>
+              <h4>Dr. Abid Pathan </h4>
               <p>Chief Operating Officer</p>
             </div>
           </div>
