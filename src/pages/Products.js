@@ -41,10 +41,7 @@ const Products = () => {
         <div className="hero-content">
           <h1>Our Pharmacies  Excellence</h1>
           <p>500+ WHO-GMP Certified Products Across 6 Therapeutic Segments</p>
-          <div className="hero-highlight">
-            <FontAwesomeIcon icon={faShieldAlt} />
-            <span>Trusted Quality • Global Standards • Patient First</span>
-          </div>
+         
         </div>
       </section>
 
