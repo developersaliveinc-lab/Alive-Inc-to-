@@ -48,7 +48,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  background: #e91e63;
   z-index: 1;
 }
 
@@ -64,13 +64,15 @@ body {
   font-weight: 900;
   margin-bottom: 30px;
   text-shadow: 4px 4px 15px rgba(0,0,0,0.8);
+
 }
 
 .slide-content p {
-  font-size: clamp(24px, 4vw, 36px);
-  text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
-  max-width: 1000px;
-  margin: 0 auto;
+    font-size: clamp(29px, 4vw, 36px);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    max-width: 1000px;
+    /* margin: 27px auto; */
+   
 }
 
 /* Slick Slider Custom - Pink Dots & Arrows */
@@ -126,7 +128,7 @@ body {
 
 /* Ethos Section */
 .ethos-section {
-  padding: 120px 0;
+  padding: 10px 0;
   background: white;
   text-align: center;
 }
@@ -194,7 +196,7 @@ body {
 
 /* Welcome Section */
 .welcome-section {
-  padding: 120px 0;
+  padding: 10px 0;
   background: white;
   position: relative;
 }
@@ -265,7 +267,7 @@ body {
 
 /* Stats Section */
 .stats-section {
-  padding: 120px 0;
+  padding: 10px 0;
   background: white;
   text-align: center;
 }
@@ -306,7 +308,7 @@ body {
 
 /* Global Reach */
 .global-reach-section {
-  padding: 120px 0;
+  padding: 10px 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   text-align: center;
 }
@@ -336,7 +338,7 @@ body {
 
 /* Strengths */
 .strengths-section {
-  padding: 120px 0;
+  padding: 10px 0;
   background: white;
 }
 
@@ -382,7 +384,7 @@ body {
 
 /* Manufacturing Excellence */
 .manufacturing-section {
-  padding: 120px 0;
+  padding: 10px 0;
   background: #f8f9fa;
 }
 
@@ -436,9 +438,9 @@ body {
   font-weight: 700;
 }
 
-/* Marquee Excellence - Seamless & Aligned */
+/* Marquee Excellence - Perfect Seamless & Correct Order */
 .marquee-excellence-section {
-  padding: 80px 0;
+  padding: 10px 0;
   background: #f8f8f8;
   overflow: hidden;
 }
@@ -450,41 +452,42 @@ body {
 
 .marquee-content {
   display: flex;
-  animation: scroll-left 60s linear infinite;
+  animation: scroll-left 80s linear infinite;
   align-items: center;
 }
 
 .marquee-group {
   display: flex;
+  align-items: center;
   gap: 80px;
   flex-shrink: 0;
-  align-items: center;
 }
 
-.marquee-content h2, .marquee-content p {
+.marquee-content h2 {
+  font-size: clamp(36px, 6vw, 52px);
+  color: #c2185b;
+  font-weight: 800;
   white-space: nowrap;
   margin: 0;
 }
 
-.marquee-content h2 {
-  font-size: clamp(36px, 5vw, 52px);
-  color: #c2185b;
-  font-weight: 800;
-}
-
 .marquee-content p {
-  font-size: clamp(26px, 4vw, 36px);
-  color: #333;
+  font-size: clamp(26px, 5vw, 36px);
+  color: #c2185b;
+  font-weight: 600;
+  white-space: nowrap;
+  margin: 0;
 }
 
 .separator {
   color: #e91e63;
   font-size: clamp(40px, 6vw, 50px);
+  flex-shrink: 0;
 }
 
-/* Accreditations Marquee */
+/* Accreditations Marquee - Seamless */
 .marquee-accreditations-section {
-  padding: 80px 0;
+  padding: 10px 0;
   background: white;
   text-align: center;
 }
@@ -498,7 +501,7 @@ body {
 
 .accreditations-logos {
   display: flex;
-  animation: scroll-left 40s linear infinite;
+  animation: scroll-left 17s linear infinite;
   align-items: center;
 }
 
@@ -509,13 +512,13 @@ body {
 }
 
 .accreditation-logo {
-  height: clamp(140px, 15vw, 180px);
+  height: clamp(140px, 15vw, 218px);
   object-fit: contain;
 }
 
 /* Advanced Formulations */
 .advanced-formulations-section {
-  padding: 120px 0;
+  padding: 10px 0;
   background: white;
   position: relative;
 }
@@ -551,7 +554,8 @@ body {
 .af-image {
   overflow: hidden;
   border-radius: 30px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+ 
+
 }
 
 .af-img {
@@ -618,7 +622,7 @@ body {
 
 /* Trusted Products - Clean Centered */
 .trusted-products-section {
-  padding: 120px 0;
+  padding: 10px 0;
   background: white;
   text-align: center;
   position: relative;
@@ -688,7 +692,7 @@ body {
 
 /* Pink Banner Marquee - Perfect Aligned & Seamless */
 .pink-banner-marquee-section {
-  padding: 100px 0;
+  padding: 10px 0;
   background: #c51162;
   overflow: hidden;
 }
@@ -701,7 +705,7 @@ body {
 .pink-banner-content {
   display: flex;
   animation: scroll-left 60s linear infinite;
-  align-items: center; /* Vertical center */
+  align-items: center;
 }
 
 .banner-group {
@@ -727,7 +731,7 @@ body {
 
 /* Testimonials */
 .testimonials-section {
-  padding: 120px 0;
+  padding: 10px 0;
   background: linear-gradient(to bottom, #fdf2f8 0%, #ffffff 100%);
   text-align: center;
 }
@@ -909,8 +913,12 @@ body {
     height: 350px;
   }
 
-  .banner-group {
+  .marquee-group, .banner-group {
     gap: 50px;
+  }
+
+  .marquee-content, .pink-banner-content {
+    animation-duration: 100s;
   }
 }
 
@@ -940,6 +948,10 @@ body {
   .test-card {
     padding: 40px 20px;
   }
+
+  .marquee-group, .banner-group {
+    gap: 40px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -962,9 +974,5 @@ body {
 
   .af-img, .manufacturing-img {
     height: 260px;
-  }
-
-  .banner-group {
-    gap: 40px;
   }
 }

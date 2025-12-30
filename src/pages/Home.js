@@ -115,10 +115,7 @@ const Home = () => {
         <div className="container">
           <div className="welcome-container">
             <div className="welcome-left">
-              <div className="years-badge">
-                <span className="years-number">20</span>
-                <span className="years-text">years of<br />experience</span>
-              </div>
+              
               <img src="/images/scientist-lab.jpg" alt="Vama Lifecare Scientist Lab" className="welcome-image" />
             </div>
 
@@ -296,18 +293,7 @@ const Home = () => {
             <p>Delivering Quality Products Worldwide</p>
             <span className="separator">●</span>
             <p>Manufactured In Accredited Pharma Facilities</p>
-            {/* Duplicate */}
-            <h2>Two Decades Of Excellence In Pharma Solutions</h2>
-            <span className="separator">●</span>
-            <p>Your One-Stop Pharma Partner</p>
-            <span className="separator">●</span>
-            <p>Reliable Solutions For Global Healthcare</p>
-            <span className="separator">●</span>
-            <p>Excellence In Life-Saving Medicines</p>
-            <span className="separator">●</span>
-            <p>Delivering Quality Products Worldwide</p>
-            <span className="separator">●</span>
-            <p>Manufactured In Accredited Pharma Facilities</p>
+          <p>Manufactured In Accredited Pharma Facilities</p>
           </div>
         </div>
       </section>
@@ -420,15 +406,7 @@ const Home = () => {
       <section className="pink-banner-marquee-section">
         <div className="marquee-container pink-marquee">
           <div className="pink-banner-content">
-            <p>Provide Safety</p>
-            <span className="pink-separator">○</span>
-            <p>Your One-Stop Pharma Partner</p>
-            <span className="pink-separator">○</span>
-            <p>Innovating Critical Care Formulations</p>
-            <span className="pink-separator">○</span>
-            <p>Excellence In Life-Saving Medicines</p>
-            <span className="pink-separator">○</span>
-            <p>Trusted Global</p>
+           
             {/* Duplicate */}
             <p>Provide Safety</p>
             <span className="pink-separator">○</span>
