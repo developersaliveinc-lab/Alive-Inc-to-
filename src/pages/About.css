@@ -81,6 +81,7 @@
   font-size: 1.3rem;
   margin-bottom: 30px;
   color: #333;
+  margin-left: 10px;
 }
 
 .highlight-box {
@@ -248,7 +249,7 @@
 
 /* Journey Timeline */
 .journey-section {
-  padding: 20px 0;
+  padding: 0px 0;
 }
 
 .timeline {

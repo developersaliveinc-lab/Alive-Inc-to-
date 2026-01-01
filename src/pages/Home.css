@@ -123,6 +123,7 @@ body {
   width: 120px;
   height: 6px;
   background: #e91e63;
+
   margin: 30px auto 0;
   border-radius: 3px;
 }
@@ -1004,5 +1005,25 @@ body {
 
   .af-img, .manufacturing-img {
     height: 260px;
+  }
+}.marquee-content {
+  display: flex;
+  animation: scroll-left 45s linear infinite; /* 45s best balance hai */
+  align-items: center;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  flex-shrink: 0;
+  padding-right: 70px; /* Extra space for seamless loop */
+}
+
+/* Mobile pe thoda faster feel ke liye */
+@media (max-width: 768px) {
+  .marquee-group {
+    gap: 40px;
+    padding-right: 40px;
   }
 }

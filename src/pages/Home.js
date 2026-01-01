@@ -277,11 +277,19 @@ const Home = () => {
           </div>
         </div>
       </section>
-{/* Two Decades Excellence Marquee - Mobile Fixed (No Repeat, No Missing Line) */}
+      <div className="marquee-content">
+  {/* First Group - All Lines Complete */}
+  <div className="marquee-group">
+    ... sab lines ...
+  </div>
+
+  {/* Duplicate Group comment hai lekin actual code nahi daala gaya! */}
+</div>
+{/* Two Decades Excellence Marquee - Mobile & Desktop Both Perfect */}
 <section className="marquee-excellence-section">
   <div className="marquee-container">
     <div className="marquee-content">
-      {/* First Group - All Lines Complete */}
+      {/* First Group */}
       <div className="marquee-group">
         <h2>Two Decades Of Excellence In Pharma Solutions</h2>
         <span className="separator">●</span>
@@ -296,7 +304,20 @@ const Home = () => {
         <p>Manufactured In Accredited Pharma Facilities</p>
       </div>
 
-      
+      {/* Duplicate Group - YE ADD KARNA ZARURI HAI */}
+      <div className="marquee-group">
+        <h2>Two Decades Of Excellence In Pharma Solutions</h2>
+        <span className="separator">●</span>
+        <p>Your One-Stop Pharma Partner</p>
+        <span className="separator">●</span>
+        <p>Reliable Solutions For Global Healthcare</p>
+        <span className="separator">●</span>
+        <p>Excellence In Life-Saving Medicines</p>
+        <span className="separator">●</span>
+        <p>Delivering Quality Products Worldwide</p>
+        <span className="separator">●</span>
+        <p>Manufactured In Accredited Pharma Facilities</p>
+      </div>
     </div>
   </div>
 </section>
@@ -346,7 +367,7 @@ const Home = () => {
               </div>
               <h3>Reliable Healthcare Delivery</h3>
               <p>Committed To Global Healthcare And Safety</p>
-            </div>
+            </div>                            
 
             <div className="af-image">
               <img src="/images/advanced/lab3.jpg" alt="Lab Testing" className="af-img" />
