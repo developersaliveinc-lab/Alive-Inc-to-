@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";  
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faGlobe, 
@@ -115,7 +116,6 @@ const Home = () => {
         <div className="container">
           <div className="welcome-container">
             <div className="welcome-left">
-              
               <img src="/images/scientist-lab.jpg" alt="Vama Lifecare Scientist Lab" className="welcome-image" />
             </div>
 
@@ -252,7 +252,7 @@ const Home = () => {
             </div>
             
             <div className="manufacturing-item">
-              <img src="images/global/ishaque1.jpg" alt="Quality Control" className="manufacturing-img" />
+              <img src="/images/global/ishaque1.jpg" alt="Quality Control" className="manufacturing-img" />
               <div className="manufacturing-overlay">
                 <FontAwesomeIcon icon={faMicroscope} className="overlay-icon" />
                 <h4>Advanced Testing Labs</h4>
@@ -260,7 +260,7 @@ const Home = () => {
             </div>
             
             <div className="manufacturing-item">
-              <img src="images/global/ishaque2.jpeg" alt="Production Line" className="manufacturing-img" />
+              <img src="/images/global/ishaque2.jpeg" alt="Production Line" className="manufacturing-img" />
               <div className="manufacturing-overlay">
                 <FontAwesomeIcon icon={faVial} className="overlay-icon" />
                 <h4>Sterile Production</h4>
@@ -268,7 +268,7 @@ const Home = () => {
             </div>
             
             <div className="manufacturing-item">
-              <img src="images/global/ishaque3.jpeg" alt="Clean Room" className="manufacturing-img" />
+              <img src="/images/global/ishaque3.jpeg" alt="Clean Room" className="manufacturing-img" />
               <div className="manufacturing-overlay">
                 <FontAwesomeIcon icon={faShieldAlt} className="overlay-icon" />
                 <h4>ISO Clean Rooms</h4>
@@ -277,50 +277,44 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="marquee-content">
-  {/* First Group - All Lines Complete */}
-  <div className="marquee-group">
-    ... sab lines ...
-  </div>
 
-  {/* Duplicate Group comment hai lekin actual code nahi daala gaya! */}
-</div>
-{/* Two Decades Excellence Marquee - Mobile & Desktop Both Perfect */}
-<section className="marquee-excellence-section">
-  <div className="marquee-container">
-    <div className="marquee-content">
-      {/* First Group */}
-      <div className="marquee-group">
-        <h2>Two Decades Of Excellence In Pharma Solutions</h2>
-        <span className="separator">●</span>
-        <p>Your One-Stop Pharma Partner</p>
-        <span className="separator">●</span>
-        <p>Reliable Solutions For Global Healthcare</p>
-        <span className="separator">●</span>
-        <p>Excellence In Life-Saving Medicines</p>
-        <span className="separator">●</span>
-        <p>Delivering Quality Products Worldwide</p>
-        <span className="separator">●</span>
-        <p>Manufactured In Accredited Pharma Facilities</p>
-      </div>
+      {/* Two Decades Excellence Marquee */}
+      <section className="marquee-excellence-section">
+        <div className="marquee-container">
+          <div className="marquee-content">
+            {/* First Group */}
+            <div className="marquee-group">
+              <h2>Two Decades Of Excellence In Pharma Solutions</h2>
+              <span className="separator">●</span>
+              <p>Your One-Stop Pharma Partner</p>
+              <span className="separator">●</span>
+              <p>Reliable Solutions For Global Healthcare</p>
+              <span className="separator">●</span>
+              <p>Excellence In Life-Saving Medicines</p>
+              <span className="separator">●</span>
+              <p>Delivering Quality Products Worldwide</p>
+              <span className="separator">●</span>
+              <p>Manufactured In Accredited Pharma Facilities</p>
+            </div>
 
-      {/* Duplicate Group - YE ADD KARNA ZARURI HAI */}
-      <div className="marquee-group">
-        <h2>Two Decades Of Excellence In Pharma Solutions</h2>
-        <span className="separator">●</span>
-        <p>Your One-Stop Pharma Partner</p>
-        <span className="separator">●</span>
-        <p>Reliable Solutions For Global Healthcare</p>
-        <span className="separator">●</span>
-        <p>Excellence In Life-Saving Medicines</p>
-        <span className="separator">●</span>
-        <p>Delivering Quality Products Worldwide</p>
-        <span className="separator">●</span>
-        <p>Manufactured In Accredited Pharma Facilities</p>
-      </div>
-    </div>
-  </div>
-</section>
+            {/* Duplicate Group for Seamless Loop */}
+            <div className="marquee-group">
+              <h2>Two Decades Of Excellence In Pharma Solutions</h2>
+              <span className="separator">●</span>
+              <p>Your One-Stop Pharma Partner</p>
+              <span className="separator">●</span>
+              <p>Reliable Solutions For Global Healthcare</p>
+              <span className="separator">●</span>
+              <p>Excellence In Life-Saving Medicines</p>
+              <span className="separator">●</span>
+              <p>Delivering Quality Products Worldwide</p>
+              <span className="separator">●</span>
+              <p>Manufactured In Accredited Pharma Facilities</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Accreditations Marquee */}
       <section className="marquee-accreditations-section">
         <div className="container">
@@ -429,7 +423,15 @@ const Home = () => {
       <section className="pink-banner-marquee-section">
         <div className="marquee-container pink-marquee">
           <div className="pink-banner-content">
-           
+            <p>Provide Safety</p>
+            <span className="pink-separator">○</span>
+            <p>Your One-Stop Pharma Partner</p>
+            <span className="pink-separator">○</span>
+            <p>Innovating Critical Care Formulations</p>
+            <span className="pink-separator">○</span>
+            <p>Excellence In Life-Saving Medicines</p>
+            <span className="pink-separator">○</span>
+            <p>Trusted Global</p>
             {/* Duplicate */}
             <p>Provide Safety</p>
             <span className="pink-separator">○</span>
@@ -484,6 +486,16 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Floating WhatsApp Button - Added Here */}
+      <a 
+        href="https://wa.me/919324745058?text=Hello%20Vama%20Lifecare%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products%20and%20services!"
+        className="whatsapp-float" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faWhatsapp} />
+      </a>
     </div>
   );
 };
