@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";  
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faGlobe, 
@@ -16,6 +15,7 @@ import {
   faWarehouse,
   faAward
 } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import "./Home.css";
 
 const Home = () => {
