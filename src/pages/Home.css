@@ -9,7 +9,7 @@ html, body, #root, #home {
 
 * {
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: 500%;
 }
 
 body {
@@ -466,7 +466,7 @@ body {
 
 .marquee-content {
   display: flex;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 10s linear infinite;
   align-items: center;
 }
 
@@ -1008,7 +1008,9 @@ body {
   }
 }.marquee-content {
   display: flex;
-  animation: scroll-left 45s linear infinite; /* 45s best balance hai */
+  animation: scroll-left 0.5s linear infinite
+  
+  ; /* 45s best balance hai */
   align-items: center;
 }
 
