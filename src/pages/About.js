@@ -10,7 +10,8 @@ import {
   faHandshake, 
   faMicroscope 
 } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom'; // For clickable Contact button
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';  // WhatsApp icon import
+import { Link } from 'react-router-dom';
 import './About.css';
 
 // Images import from src/images
@@ -145,7 +146,7 @@ const About = () => {
             </div>
             <div className="team-card">
               <img src={teamCOO} alt="Mr. Amit Kumar" />
-              <h4>Dr. Abid Pathan </h4>
+              <h4>Dr. Abid Pathan</h4>
               <p>Chief Operating Officer</p>
             </div>
           </div>
@@ -189,6 +190,16 @@ const About = () => {
           <Link to="/contact" className="cta-btn">Contact Us</Link>
         </div>
       </section>
+
+      {/* Floating WhatsApp Button */}
+      <a 
+        href="https://wa.me/919324745058?text=Hello%20Vama%20Lifecare%2C%20I%20am%20interested%20in%20your%20products%20and%20services."
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faWhatsapp} />
+      </a>
     </div>
   );
 };

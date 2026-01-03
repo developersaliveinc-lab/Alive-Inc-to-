@@ -19,24 +19,12 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import "./Home.css";
 
 const Home = () => {
-  const heroSettings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    pauseOnHover: true,
-    arrows: true,
-    fade: true,
-    cssEase: "linear",
-  };
+
 
   return (
     <div id="home">
       {/* Hero Slider */}
-      <Slider {...heroSettings}>
+      <Slider >
         <div className="slide" style={{ backgroundImage: `url(/images/d11bfd9e-8795-48b7-a084-fa9d6733cfeb.png)` }}>
           <div className="slide-content">
             <h1>VAMA</h1>
@@ -284,7 +272,7 @@ const Home = () => {
           <div className="marquee-content">
             {/* First Group */}
             <div className="marquee-group">
-              <h2>Two Decades Of Excellence In Pharma Solutions</h2>
+             
               <span className="separator">●</span>
               <p>Your One-Stop Pharma Partner</p>
               <span className="separator">●</span>
@@ -295,11 +283,8 @@ const Home = () => {
               <p>Delivering Quality Products Worldwide</p>
               <span className="separator">●</span>
               <p>Manufactured In Accredited Pharma Facilities</p>
-            </div>
-
-            {/* Duplicate Group for Seamless Loop */}
-            <div className="marquee-group">
-              <h2>Two Decades Of Excellence In Pharma Solutions</h2>
+            
+           
               <span className="separator">●</span>
               <p>Your One-Stop Pharma Partner</p>
               <span className="separator">●</span>

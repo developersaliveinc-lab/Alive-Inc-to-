@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';  // useEffect nahi use ho raha, remove kiya
 import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -10,7 +10,8 @@ import {
 import {
   faFacebookF,
   faInstagram,
-  faLinkedinIn
+  faLinkedinIn,
+  faWhatsapp  // ← WhatsApp icon added from brands
 } from '@fortawesome/free-brands-svg-icons';
 import './Contact.css';
 
@@ -19,29 +20,29 @@ const Contact = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
 
- const sendEmail = (e) => {
-  e.preventDefault();
-  setSending(true);
-  setSuccess(false);
-  setError('');
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setSending(true);
+    setSuccess(false);
+    setError('');
 
-  emailjs.sendForm(
-    'service_4imqcj3',      // Correct Service ID
-    'template_fb554mb',     // Template ID
-    e.target,
-    '-eikndrZpqw0OZ0t3'     // Public Key
-  )
-  .then(() => {
-    setSuccess(true);
-    setSending(false);
-    e.target.reset();
-  })
-  .catch((err) => {
-    console.error('EmailJS error:', err);  // Look here for exact reason
-    setError('Failed to send message. Please try again.');
-    setSending(false);
-  });
-};
+    emailjs.sendForm(
+      'service_4imqcj3',
+      'template_fb554mb',
+      e.target,
+      '-eikndrZpqw0OZ0t3'
+    )
+    .then(() => {
+      setSuccess(true);
+      setSending(false);
+      e.target.reset();
+    })
+    .catch((err) => {
+      console.error('EmailJS error:', err);
+      setError('Failed to send message. Please try again.');
+      setSending(false);
+    });
+  };
 
   return (
     <div className="contact-page">
@@ -188,8 +189,7 @@ const Contact = () => {
             </a>
           </div>
 
-         
-        <div className="map-container">
+          <div className="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.99!2d72.9955!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8e5f8b3e4d7%3A0x8e3a3e3e3e3e3e3e!2sFantasia%20Business%20Park!5e0!3m2!1sen!2sin!4v1700000000000"
               width="100%"
@@ -202,6 +202,16 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Floating WhatsApp Button */}
+      <a 
+        href="https://wa.me/919324745058?text=Hello%20Vama%20Lifecare%2C%20I%20have%20a%20query."
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faWhatsapp} />
+      </a>
     </div>
   );
 };

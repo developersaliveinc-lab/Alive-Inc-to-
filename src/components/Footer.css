@@ -2,7 +2,7 @@
 .site-footer {
   background-color: #111;
   color: #ddd;
-  padding: 80px 30px 40px;
+      padding: 80px 30px 15px;
   position: relative;
   background-image: url('https://img.freepik.com/free-vector/minimal-dotted-retro-line-dark-black-background_1017-42983.jpg');
   background-size: cover;
@@ -125,7 +125,7 @@
 }
 
 .footer-bottom p {
-  margin: 10px 0;
+  margin: 0px 0;
 }
 
 .footer-bottom span {
